@@ -1,0 +1,10 @@
+* Часть относящаяся к SDL
+#include <SDL.h>
+** Инициализация
+SDL_Init. Можно вызывать как: SDL_Init(SDL_INIT_EVERYTHING)
+** Видео-режим
+SDL_SetVideoMode(width,  heigth, colorDepth, options)
+*** options
+    SDL_HWSURFACE - испоьзуем видеопамять
+    SDL_DOUBLEBUF - двойная буферизация (только для SDL_HWSURFACE)
+    SDL_OPENGL - использовать OpenGL
